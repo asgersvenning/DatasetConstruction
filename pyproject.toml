@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+  "hatchling"
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+packages = [
+    { include="dataset_construction", from="src" },
+]
+
+[project]
+name = "DatasetConstruction"
+version = "0.0.12"
+authors = [
+  { name="Asger Svenning", email="asgersvenning@gmail.com" },
+]
+description = "A package for automated (biological) dataset generation"
+readme = "README.md"
+requires-python = ">=3.8.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "PyYAML>=6.0.1"
+]
+
+[project.optional-dependencies]
+full = []
+
+[project.urls]
+"Homepage" = "https://github.com/asgersvenning/DatasetConstruction"
+"Bug Tracker" = "https://github.com/asgersvenning/DatasetConstruction/issues"
